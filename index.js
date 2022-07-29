@@ -15,6 +15,11 @@ const port = process.env.PORT || 3000
     
     res.send('<h1>This lab is a deliverable</h1><h3>Build 10 Routes and a view engine, say anything you want</h3>');
   });
+
+  app.get('/graduate', (req, res) => {
+    res.send("<h1>Graduate Perscholas</h1> I used to doubt myself and my abilities. I kept my focus<br> on my training and the image of the person I wanted to become, and I overcame it.<br> Today, I am a full-stack developer and I encourage anyone trying to break into tech to <br>consider Per Scholas ")
+});
+
     // For contact routes
   app.get('/contact', (req, res) => {
     res.send('for more details contact US ')
